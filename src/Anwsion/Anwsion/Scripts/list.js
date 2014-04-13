@@ -27,7 +27,7 @@ function loaded() {
 	pullUpOffset = pullUpEl.offsetHeight;
 
 	hasMoreData = false;
-	// $("#thelist").hide();
+	 $("#thelist").hide();
 	$("#pullUp").hide();
 
 	pullDownEl.className = 'loading';
@@ -107,9 +107,9 @@ function loaded() {
 					}
 				});
 
-				//$("#thelist").empty();
+				$("#thelist").empty();
 				$.each(response.list, function(key, value) {
-					$("#thelist").append('<li>' + value.name + '\t' + value.time + '</li>');
+				    $("#thelist").append('<li><img src="http://img1.ciwong.net/uidimg_default/80010/50" class="img48" /><div class="info"><p class="name"><span class="blue">岳小云</span><span>男</span><span class="right">40秒前</span></p><p class="text">船、客船、潜水艇、汽艇、水上自行车、渔船、货船、水上飞机、帆船、木筏、木帆船、轮船、快艇、核潜艇、船舶、潜</p><p><span>初一 数学</span><span>2回答</span></p></div><div class="clearfix"></div></li>');
 				});
 				// $("#thelist").listview("refresh");
 				myScroll.refresh(); // Remember to refresh when contents are loaded (ie: on ajax completion)
@@ -150,7 +150,8 @@ function refresh() {
 				}
 
 				$.each(response.list, function(key, value) {
-					$("#thelist").append('<li>' + value.name + '\t' + value.time + '</li>');
+				    //$("#thelist").append('<li>' + value.name + '\t' + value.time + '</li>');
+				    $("#thelist").append('<li><img src="http://img1.ciwong.net/uidimg_default/80010/50" class="img48" /><div class="info"><p class="name"><span class="blue">岳小云</span><span>男</span><span class="right">40秒前</span></p><p class="text">船、客船、潜水艇、汽艇、水上自行车、渔船、货船、水上飞机、帆船、木筏、木帆船、轮船、快艇、核潜艇、船舶、潜</p><p><span>初一 数学</span><span>2回答</span></p></div><div class="clearfix"></div></li>');
 				});
 				// $("#thelist").listview("refresh");
 				myScroll.refresh(); // Remember to refresh when contents are loaded (ie: on ajax completion)
@@ -184,7 +185,8 @@ function nextPage() {
 				}
 
 				$.each(response.list, function(key, value) {
-					$("#thelist").append('<li>' + value.name + '\t' + value.time + '</li>');
+				    //$("#thelist").append('<li>' + value.name + '\t' + value.time + '</li>');
+				    $("#thelist").append('<li><img src="http://img1.ciwong.net/uidimg_default/80010/50" class="img48" /><div class="info"><p class="name"><span class="blue">岳小云</span><span>男</span><span class="right">40秒前</span></p><p class="text">船、客船、潜水艇、汽艇、水上自行车、渔船、货船、水上飞机、帆船、木筏、木帆船、轮船、快艇、核潜艇、船舶、潜</p><p><span>初一 数学</span><span>2回答</span></p></div><div class="clearfix"></div></li>');
 				});
 				// $("#thelist").listview("refresh");
 				myScroll.refresh(); // Remember to refresh when contents are loaded (ie: on ajax completion)
