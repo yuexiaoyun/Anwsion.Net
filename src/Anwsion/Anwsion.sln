@@ -12,6 +12,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B481FF
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F8B6B855-5BA3-48AF-AA55-25A925CDE71F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anwsion.Domain.Entity", "Domain\Anwsion.Domain.Entity\Anwsion.Domain.Entity.csproj", "{5FEB64F2-5523-4A54-A33C-3B872A55CF4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mysql", "mysql", "{71400B24-B5A8-454E-9328-24D18D4A12A1}"
+	ProjectSection(SolutionItems) = preProject
+		mysql\mysql.sql = mysql\mysql.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,8 +31,15 @@ Global
 		{33A1B7C9-3FAF-4F71-AC13-0EA6CD937228}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33A1B7C9-3FAF-4F71-AC13-0EA6CD937228}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33A1B7C9-3FAF-4F71-AC13-0EA6CD937228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FEB64F2-5523-4A54-A33C-3B872A55CF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FEB64F2-5523-4A54-A33C-3B872A55CF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FEB64F2-5523-4A54-A33C-3B872A55CF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FEB64F2-5523-4A54-A33C-3B872A55CF4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FEB64F2-5523-4A54-A33C-3B872A55CF4B} = {F8B6B855-5BA3-48AF-AA55-25A925CDE71F}
 	EndGlobalSection
 EndGlobal

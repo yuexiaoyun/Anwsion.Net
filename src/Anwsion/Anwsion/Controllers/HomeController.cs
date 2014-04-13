@@ -15,7 +15,7 @@ namespace Anwsion.Controllers
 
         public JsonResult getitem(int page = 1, int pagesize = 25)
         {
-            var time = DateTime.Now.ToString("yyy-mm-dd HH:MM:ss");
+            var time = DateTime.Now.ToString("HH:MM:ss");
 
             var offset = (page - 1) * pagesize;
             var pagetotal = page * pagesize;
